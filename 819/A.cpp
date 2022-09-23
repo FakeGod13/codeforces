@@ -6,8 +6,8 @@ using namespace std;
 const int N = 2000 + 5;
 
 void solve(){
-	int n; cin >> n;	
-	int a[N]; for(int i=1; i<=n; i++) cin >> a[i]; 
+	int n; cin >> n;
+	int a[N]; for(int i=1; i<=n; i++) cin >> a[i];
 	int ans = 0;
 	for(int i = 1; i<=n; i++){
 		if(i>1 && a[i-1]-a[i]>ans) ans = a[i-1]-a[i];
